@@ -1,0 +1,1 @@
+data_in = [] #list(X_test.iloc[1,:]) save the values pushed out and call it a day
