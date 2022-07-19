@@ -67,12 +67,12 @@ Value counts of categorical variables:
 ![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/size.png "Company Size")
 ![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/company_name.png "Company Name")
 
-Pivot Tables:
+
 ![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/avg_salary.png "Average Salary by Role")
 ![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/avg_salary_seniority.png "Average Salary by Role and Seniority")
 ![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/avg_salary_state.png "Average Salary by State")
 
-World Cloud of job description:
+
 ![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/word_cloud.png "World Cloud")
 
 
