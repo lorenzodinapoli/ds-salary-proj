@@ -1,7 +1,7 @@
 # ds-salary-proj
 repo for end-to-end data scientist salary prediction
 
-	- Created a tool to estimate data scientist salaries (MAE = k)to help data scientist negotiate their salary
+	- Created a tool to estimate data scientist salaries (MAE = 25.52k)to help data scientist negotiate their salary
 	- Engineered features from text of each job description to quantify the value companies put on skills such as python, R, spark, and excel
 	- Optimized linear, Lasso, and Random Forest Regressor using Random Search CV (preferred over Grid Search CV for running time optimization)
 		to reach the best model
@@ -60,9 +60,21 @@ The dataset from Kaggle was filled with raw data scraped from Glassdoor so a lot
 
 In the exploration phase I looked at the distribution of the data and the value counts for the categorical variables as well as to the correlation matrix of the main variables.
 
-()
-()
-()
+Value counts of categorical variables:
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/location.png "Location")
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/revenues.png "Revenues")
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/sector.png "Sector")
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/size.png "Company Size")
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/company_name.png "Company Name")
+
+Pivot Tables:
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/avg_salary.png "Average Salary by Role")
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/avg_salary_seniority.png "Average Salary by Role and Seniority")
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/avg_salary_state.png "Average Salary by State")
+
+World Cloud of job description:
+![alt text](https://github.com/lorenzodinapoli/ds-salary-proj/blob/main/images/word_cloud.png "World Cloud")
+
 
 
 ## Model Building
@@ -74,14 +86,17 @@ I then decided to use three models and evaluate them by using the Mean Absolute 
 
 The three different models used are:
 
-	- **Multiple Linear Regression:** Baseline for the model
-	- **Lasso Regression:** Since we have a lot of dummy variables that make the data very sparse having a regularization system might make sense
-	- **Random Forest:** This could be a good fit also because of the sparsity of the data
+		**Multiple Linear Regression:** Baseline for the model
+	 	**Lasso Regression:** Since we have a lot of dummy variables that make the data very sparse having a regularization system might make sense
+		**Random Forest:** This could be a good fit also because of the sparsity of the data
 
 ## Model Performance
 
+After developing our models and applied RandomSearchCV (in order to save time when optimizing, GridSearchCV was taking too long for my hardware) the best performing models based on MAE are:
 
-
+	**Random Forest:** 25.52
+	**Lasso Regression:** 25.67
+	**Linear Regression:** 25.92
 
 
 
