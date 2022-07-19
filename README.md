@@ -87,7 +87,9 @@ I then decided to use three models and evaluate them by using the Mean Absolute 
 The three different models used are:
 
 **Multiple Linear Regression:** Baseline for the model
+
 **Lasso Regression:** Since we have a lot of dummy variables that make the data very sparse having a regularization system might make sense
+
 **Random Forest:** This could be a good fit also because of the sparsity of the data
 
 ## Model Performance
@@ -95,7 +97,9 @@ The three different models used are:
 After developing our models and applied RandomSearchCV (in order to save time when optimizing, GridSearchCV was taking too long for my hardware) the best performing models based on MAE are:
 
 **Random Forest:** 25.52
+
 **Lasso Regression:** 25.67
+
 **Linear Regression:** 25.92
 
 
